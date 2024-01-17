@@ -14,7 +14,7 @@ app.use(cors())
 
 const API_KEY = process.env.API_KEY_OPEN_AI;
 
-app.post("/specsk", async (req, res) => {
+app.post("/", async (req, res) => {
   
   let prompt = "Generate 5 short passages that are always at least 4 sentences each and never ever over 5 sentences. The passages must be unique everytime, never ever do you dare generate a similar passage. These passages must be trying to check for reading comprehension. Keep the subject of the passages diverse and choose any topic the choice is yours.  Give only title of the passage and the text itself and nothing else. Start each generation with a newline character.";
 
@@ -51,7 +51,7 @@ app.post("/specsk", async (req, res) => {
   }
 });
 
-app.post("/specskquestions", async (req, res) => {
+app.post("/", async (req, res) => {
   const skill = req.body.skilltype_;
   let firstpart = '';
   let explanatory_text = '';
