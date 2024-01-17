@@ -12,7 +12,7 @@ app.use(cors())
 
 
 
-const API_KEY = process.env.API_KEY_OPEN_AI;
+const API_KEY = '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';
 
 app.post("/index.js", async (req, res) => {
   
