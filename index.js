@@ -10,6 +10,9 @@ dotenv.config();
 app.use(express.json());
 app.use(cors())
 
+export const config = {
+  runtime: 'edge',
+};
 
 
 const API_KEY = process.env.OPEN_AI_KEY;
