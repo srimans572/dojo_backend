@@ -47,7 +47,7 @@ app.post("/index.js", async (req, res) => {
   }
 });
 
-app.post("/index.js", async (req, res) => {
+app.post("/indexquestions.js", async (req, res) => {
   const skill = req.body.skilltype_;
   let firstpart = '';
   let explanatory_text = '';
